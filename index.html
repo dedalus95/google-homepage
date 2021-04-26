@@ -1,50 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>
-        Google
-    </title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
-
+    <title> google-webpage</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <style>
 .image {
     display:block;
-    margin:250px auto auto auto;
+    margin:150px auto auto auto;
     width:20%;
     height:20%;
+    position:relative;
 }
-.searchbox {
-    border-radius: 40px;
-    border-style: groove;
-    border-color: rgba(255,255,255,0.25);
-    display:flex;
+.search-box {
+    border-radius: 34px;
+    border-style:groove;
+    border-color: rgba(255,255,255,0.61);
+    border-width:1px;
+    display:block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
     height:25px;
     width: 40%;
-    position absolute;
-}
-#icon {
-    margin-left: 210px;
-    margin-top: -20em;
-    margin-bottom: -6em;
-}
-form {
-margin: auto;
-}
+    position:relative;
+    left:auto;
+            }
 
+#icon {
+    font-size: 20px;
+    color:#D3D3D3; 
+    left: 185px;
+    bottom: 566px;
+    position:absolute;
+    
 </style>
+</head>
 <main>
     <img class="image" src="https://web.archive.org/web/20191130235109im_/https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google logo">
-    
         <form>
             <div>
-            <input class="searchbox" type="text" required> 
-            <i id="icon" class="material-icons" style="font-size: 25px; color:#D3D3D3;">search</i>
+                <input class="search-box" type="text"> 
+                <div>
+                <i  class="material-icons" id="icon"> search</i>
+                </div>
             </div>
-         </form>
-    
+        </form>
 </main>
-</html
+</html>
