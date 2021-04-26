@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Google
+    </title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
 
 <style>
 .image {
@@ -11,22 +18,33 @@
     border-radius: 40px;
     border-style: groove;
     border-color: rgba(255,255,255,0.25);
-    display:block;
+    display:flex;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
     height:25px;
     width: 40%;
-
+    position absolute;
+}
+#icon {
+    margin-left: 210px;
+    margin-top: -20em;
+    margin-bottom: -6em;
+}
+form {
+margin: auto;
 }
 
 </style>
 <main>
-
     <img class="image" src="https://web.archive.org/web/20191130235109im_/https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google logo">
-    <div>
+    
         <form>
-            <input class="searchbox" type="text" required placeholder=""> 
-            </form>
-    </div>
+            <div>
+            <input class="searchbox" type="text" required> 
+            <i id="icon" class="material-icons" style="font-size: 25px; color:#D3D3D3;">search</i>
+            </div>
+         </form>
+    
 </main>
+</html
