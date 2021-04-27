@@ -5,45 +5,50 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <style>
 .image {
-    display:block;
-    margin:150px auto auto auto;
-    width:20%;
-    height:20%;
-    position:relative;
+    width:350px;
+    height:auto;
+    margin-top: 10em;
 }
 .search-box {
     border-radius: 34px;
     border-style:groove;
-    border-color: rgba(255,255,255,0.61);
+    border-color: rgba(0,0,0,0.17);
     border-width:1px;
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
-    height:25px;
-    width: 40%;
-    position:relative;
-    left:auto;
+    height:39px;
+    width: 640px;
+    margin-top: 20px;
             }
+input:focus {
+    outline: none;
+}
 
 #icon {
     font-size: 20px;
-    color:#D3D3D3; 
-    left: 185px;
-    bottom: 566px;
-    position:absolute;
+    color:rgba(0,0,0,0.33); 
+    left: -300px;
+    bottom: 31px;
+    margin: 0 auto;
+    position:relative
+    }
+
+.parent {
+    display:grid;
+    place-items: center;
+}
     
 </style>
 </head>
-<main>
-    <img class="image" src="https://web.archive.org/web/20191130235109im_/https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google logo">
-        <form>
-            <div>
-                <input class="search-box" type="text"> 
-                <div>
-                <i  class="material-icons" id="icon"> search</i>
+<main>  
+    <div class="parent">
+         <img class="image" src="https://web.archive.org/web/20191130235109im_/https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google logo">
+    </div>
+             <form>
+                <div class="parent" >
+                    <input type="text" class="search-box"/> 
+                    <div>
+                    <i  class="material-icons" id="icon"> search</i>
                 </div>
-            </div>
-        </form>
+                </div>
+             </form>
 </main>
 </html>
