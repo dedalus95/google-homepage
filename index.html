@@ -3,11 +3,16 @@
 <head>
     <title> google-webpage</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 .image {
     width: 272px;
     height:92px;
-    margin-top: 10em;
+    margin:15em auto auto auto;
+    position:relative;
+    left:80px;
+   
+
 }
 .search-box {
     border-radius: 40px;
@@ -16,7 +21,7 @@
     border-width:1px;
     height:46px;
     width: 510px;
-    margin-top: 20px;
+    margin: 20px auto auto auto;
             }
 input:focus {
     outline: none;
@@ -34,12 +39,12 @@ input:focus {
 
 .parent {
     display:grid;
-    place-items: center;
+    text-align: center;
 }
 
 input {
     padding-left: 48px;
-    font-size: 17px;
+    font-size: 14px;
 }
 
 .search-box:hover {
@@ -74,10 +79,90 @@ input {
     box-shadow: -1px -2px 2px rgba(0,0,0,0.12), 1px 2px 2px rgba(0,0,0,0.12);
 }
 
+.buttons-left {
+    border:none;
+    background-color: white;
+    color:#444444;
+    padding-left:5px;
+}
+
+.buttons-left:hover {
+    text-decoration: underline;
+}
+
+.button-right-gmail {
+    border:none;
+    background-color: white;
+    color:#444444;
+    float:right;
+}
+.button-right-gmail:hover {
+    text-decoration: underline;
+}
+
+.button-right-immagini {
+    border:none;
+    background-color: white;
+    color:#444444;
+    float:right;
+    padding-left:10px;
+}
+
+.button-right-immagini:hover {
+    text-decoration: underline;
+}
+
+.button-apps{
+    float:right;
+    outline: none;
+    margin-top: 3px;
+    padding-left: 5px;
+    padding-right: 10px;;
+    margin-bottom:auto;
+}
+
+.button-right-accedi {
+    border:none;
+    border-radius: 4px;
+    border-color:#4285F4;
+    background-color: #4285F4;
+    color:white;
+    float:right;
+    padding-left:5px;
+    width: 105px;
+    height:35px;
+    position:relative;
+    margin-left: 0px;
+    margin-bottom:auto;
+
+}
+nav{
+    margin:20px 20px auto 20px;
+}
+
+
+
+
 </style>
 </head>
 <main>  
-    <div class="parent">
+    <div>
+    <header>
+        <nav>
+        
+            <input class="buttons-left" type="submit" value="Chi siamo">
+            <input class="buttons-left" type="submit" value="Google Store">
+            <input class="button-right-accedi" type="submit" value="Accedi">
+            <div class="button-apps"><i class= "material-icons"> apps</i> </div>
+            <input class="button-right-immagini" type="submit" value="Immagini">
+            <input class="button-right-gmail" type="submit" value="Gmail">
+            
+        </nav>
+       
+    </header>
+    </div>
+    
+    <div class="parent" >
          <img class="image" src="https://web.archive.org/web/20191130235109im_/https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google logo">
     </div>
              <form>
