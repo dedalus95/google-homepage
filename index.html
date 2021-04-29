@@ -11,6 +11,7 @@
     margin:15em auto auto auto;
     position:relative;
     left:80px;
+    bottom:90px;
    
 
 }
@@ -21,7 +22,8 @@
     border-width:1px;
     height:46px;
     width: 510px;
-    margin: 20px auto auto auto;
+    margin: -70px auto -50px auto;
+   
             }
 input:focus {
     outline: none;
@@ -31,7 +33,7 @@ input:focus {
     font-size: 20px;
     color:rgba(0,0,0,0.33); 
     left: -252px;
-    bottom: 35px;
+    bottom: 53px;
     margin: 0 auto;
     position:relative;
     padding-bottom: 20px;
@@ -40,6 +42,7 @@ input:focus {
 .parent {
     display:grid;
     text-align: center;
+   
 }
 
 input {
@@ -58,19 +61,21 @@ input {
 .buttons-wrapper {
     width:100%;
     text-align: center;
+    margin-top: -20px;
 }
 
 .buttons-layout {
-    width: 180px;
-    height:40px;
-    background-color: rgba(0,0,0,0.041);
+    width: 150px;
+    height:35px;
+    background-color: rgba(0,0,0,0.031);
     color: #444444;
     border: none;
     font-family: sans-serif;
     display:inline-block;
     padding:0px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top:-40px;
 }
 .buttons-layout:hover {
     box-shadow: -1px -2px 2px rgba(0,0,0,0.12), 1px 2px 2px rgba(0,0,0,0.12);
@@ -114,29 +119,52 @@ input {
 
 .button-apps{
     float:right;
-    outline: none;
-    margin-top: 3px;
-    padding-left: 5px;
-    padding-right: 10px;;
-    margin-bottom:auto;
+    color: #444444;
+    position: relative;
+    right: 8px;
+    top:4px;
+    
+
+}
+
+.circle {
+float: right;
+padding-left: 5px;
+padding-top: 5px;
+background-color: white;
+border-radius: 50%;
+width: 35px;
+height:35px;
+position:relative;
+bottom: 7px;
+
+
+}
+.circle:hover {
+   background-color: rgb(241, 241, 241);
 }
 
 .button-right-accedi {
     border:none;
     border-radius: 4px;
-    background-color: #4285F4;
+    background-color: #146cfa;
     color:white;
     float:right;
     padding-left:5px;
     width: 105px;
     height:35px;
     position:relative;
-    margin-left: 0px;
-    margin-bottom:auto;
+    bottom: 4px;
+    margin-left: 10px;
+    margin-bottom:auto;}
+    
 
+.button-right-accedi:hover {
+    background-color: #4285F4;
 }
 nav{
     margin:20px 20px auto 20px;
+
 }
 
 
@@ -152,7 +180,9 @@ nav{
             <input class="buttons-left" type="submit" value="Chi siamo">
             <input class="buttons-left" type="submit" value="Google Store">
             <input class="button-right-accedi" type="submit" value="Accedi">
-            <div class="button-apps"><i class= "material-icons"> apps</i> </div>
+           
+            <div class="circle">  <div class="button-apps"><i class= "material-icons"> apps</i> </div> </div>
+            
             <input class="button-right-immagini" type="submit" value="Immagini">
             <input class="button-right-gmail" type="submit" value="Gmail">
             
