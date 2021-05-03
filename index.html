@@ -91,6 +91,9 @@ input {
     color:#444444;
     padding-left:5px;
     font-size: 13.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    position:relative;
+    top:5px;
 }
 
 .buttons-left:hover {
@@ -103,6 +106,10 @@ input {
     color:#444444;
     float:right;
     font-size: 13.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    position:relative;
+    top:6px;
+    right: 4px;
 }
 .button-right-gmail:hover {
     text-decoration: underline;
@@ -115,6 +122,10 @@ input {
     float:right;
     padding-left:10px;
     font-size:13.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top:6px;
+    right:4px;
 }
 
 .button-right-immagini:hover {
@@ -214,14 +225,14 @@ a:hover {
 <header>
         <nav>
         
-            <input class="buttons-left" type="submit" value="Chi siamo">
-            <input class="buttons-left" type="submit" value="Google Store">
+            <a href="#" class="buttons-left">Chi siamo</a>
+            <a href="#" class="buttons-left">Google Store</a>
             <a href="#" id="accedi-layout" class="button-right-accedi"> <div>Accedi</div></a>
            
-            <div class="circle">  <div class="button-apps"><i class= "material-icons"> apps</i> </div> </div> 
+            <a href="#"><div class="circle">  <div class="button-apps"><i class= "material-icons"> apps</i> </div> </div> </a>
             
-            <input class="button-right-immagini" type="submit" value="Immagini">
-            <input class="button-right-gmail" type="submit" value="Gmail">
+            <a href="#" class="button-right-immagini">Immagini</a>
+            <a href="#" class="button-right-gmail">Gmail</a>
             
         </nav>
        
